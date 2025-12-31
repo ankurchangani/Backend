@@ -1,0 +1,31 @@
+Express.js Framwork 
+
+introduction Express js
+
+... Framwork
+
+manages everythings from receiving the req and giving the res 
+
+// setting up a basci Express app
+
+// routing 
+
+// middleware
+
+"Router se pehle jo bhi kaam karwana ho, middleware use karte hain.
+
+Middleware ek aisa function hota hai jo request aur response ke beech mein aata hai. Ye har request pe kuch kaam kar sakta hai jaise:
+
+Authentication (login check)
+
+Logging (request ka record rakhna)
+
+Data validation
+
+Response headers set karna
+
+Error handling
+
+// req and  res handling 
+
+error handling

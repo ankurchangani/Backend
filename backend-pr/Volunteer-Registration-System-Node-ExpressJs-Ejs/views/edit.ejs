@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Register New Volunteers</title>
+</head>
+<body style="height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; font-family: 'Courier New', Courier, monospace; background-color: #000;">
+    <form style="max-width: 400px; margin: auto; background: #1c1c1c; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px 0px #000;" action="/update/<%= item.id %>" method="post">
+        
+        <h2 style="text-align: center; color: #ffffff;">Register Update Form</h2>
+
+        <input type="text" name="id" value="<%= item.id %>" hidden>
+        
+        <label style="font-weight: bold; color: #d3d3d3;">Name:</label>
+
+        <input type="text" name="name" value="<%= item.name %>" style="background-color: #2c2c2c; color: #ffffff; outline: none; width: 100%; padding: 8px; margin: 6px 0px; border: 1px solid #444; border-radius: 5px;">
+        
+        <label style="font-weight: bold; color: #d3d3d3;">Email:</label>
+
+        <input type="email" name="email" value="<%= item.email %>" style="background-color: #2c2c2c; color: #ffffff; outline: none; width: 100%; padding: 8px; margin: 6px 0px; border: 1px solid #444; border-radius: 5px;">
+        
+        <label style="font-weight: bold; color: #d3d3d3;">Phone Number:</label>
+
+        <input type="tel" name="phone" value="<%= item.phone %>" style="background-color: #2c2c2c; color: #ffffff; outline: none; width: 100%; padding: 8px; margin: 6px 0px; border: 1px solid #444; border-radius: 5px;">
+        
+        <label style="font-weight: bold; color: #d3d3d3;">Skills:</label>
+
+        <input type="text" name="skills" value="<%= item.skills %>" style="background-color: #2c2c2c; color: #ffffff; outline: none; width: 100%; padding: 8px; margin: 6px 0px; border: 1px solid #444; border-radius: 5px;">
+        
+        <button type="submit" style="width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; margin-top: 6px;">Update </button>
+    </form>
+</body>
+</html>

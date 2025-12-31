@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Edit User</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="max-w-2xl mx-auto py-10">
+    <h1 class="text-3xl font-bold mb-6 text-center">Edit User</h1>
+
+    <div class="bg-white p-6 rounded shadow">
+      <form action="/edit/<%= user._id %>" method="POST" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <input type="text" name="name" value="<%= user.name %>" required class="p-2 border rounded" />
+        <input type="email" name="email" value="<%= user.email %>" required class="p-2 border rounded" />
+        <input type="password" name="password" value="<%= user.password %>" required class="p-2 border rounded" />
+        <div class="md:col-span-3 text-right">
+          <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Update User</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="/users" class="text-blue-600 hover:underline">← Back to User List</a>
+    </div>
+  </div>
+
+</body>
+</html>
